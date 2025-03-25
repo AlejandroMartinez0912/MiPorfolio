@@ -1,0 +1,31 @@
+body{
+    background: linear-gradient(to bottom, #191a5c, black);
+    min-height: 100vh; /* Asegura que cubra toda la pantalla */
+    margin: 0;
+
+    /* Estilo de fuente Helvetica */
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;
+
+    /* Color de texto blanco */
+    color: whitesmoke;
+
+    /* Centrar el contenido verticalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+/* Estilos para a los enlaces */
+a {
+    color: #FFD43B;
+    text-decoration: none;
+}
+
+/* Section presentacion */
+.presentacion{
+    display: flex;
+}
