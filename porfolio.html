@@ -1,100 +1,187 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio Martinez Alejandro</title>
-    <!-- estilos css-->
+    <title>Porfolio Alejandro</title>
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-
-
-            </ul>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#inicio" class="nav-link active">Inicio</a>
+            <a href="#proyectos" class="nav-link">Proyectos</a>
+            <a href="#tecnologias" class="nav-link">Tecnologías</a>
+            <a href="#educacion" class="nav-link">Educación</a>
+            <a href="#contacto" class="nav-link">Contacto</a>
         </nav>
     </header>
-
-    <main>
-        <h1>Hola! Soy Alejandro Martinez <i class="fa-solid fa-face-laugh-wink"></i></h1>
-        <section class="presentacion">
-            <div>
-                <div class="card">
-                    <div class="card-inner">
-                    <div class="card-front">
-                        <p>Hola, soy Alejandro Martinez</p>
-                    </div>
-                    <div class="card-back">
-                        <p>Analista en sistemas, apasionado por la tecnologia y la programacion.</p>
-                    </div>
-                    </div>
-                </div>
-                <div>
-                    <!-- Botones de redes sociales -->
-                     <!-- Mi CV-->
-                     <a class="BotonesRedes" href="CV Alejandro Martinez.pdf" download>
-                        <i class="fa-solid fa-file"></i>
-                        Mi CV
-                    </a>
-                    
-                     <!-- linkedin-->
-                    <a class ="BotonesRedes" href="https://www.linkedin.com/in/alejandro-martinez-6782202b3/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-                    <!-- github-->
-                     <a class="BotonesRedes" href="https://github.com/AlejandroMartinez0912" target="_blank"><i class="fa-brands fa-github"></i> Github></a>
-                     <!-- telegram-->
-                     
-                </div>
-            </div>
-
-            <div class="fotoPerfil">
-                <img src="imagenPerfil.png" alt="" class="imagenPerfil">
-            </div>
-        </section>
-        
-        <section>
-            <h2>
-                <i class="fa-solid fa-folder" style="color: rgb(103, 92, 156);"></i>
-                Proyectos</h2>
-            <ul>
-                <li>Proyecto 1</li>
-                <li>Proyecto 2</li>
-                <li>Proyecto 3</li>
-            </ul>
-        </section>
-        <section>
-            <h2>
-                <i class="fa-solid fa-code" style="color: rgb(103, 92, 156);"></i>
-                Tecnologías</h2>
-            <ul>
-                <li>Tecnologia 1</li>
-                <li>Tecnologia 2</li>
-                <li>Tecnologia 3</li>
-            </ul>
-        </section>
-        <section>
-            <h2>
-                <i class="fa-solid fa-user-graduate" style="color: rgb(103, 92, 156);"></i>
-                Educación</h2>
-            <ul>
-                <li>Estudio 1</li>
-                <li>Estudio 2</li>
-                <li>Estudio 3</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Contacto</h2>
-            <p>Correo: 9BfMg@example.com</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>Derechos reservados &copy; 2025</p>
-    </footer>
     
+    <section id="inicio" class="Inicio">
+        <div class="TituloBotones">
+            <div class="NombreBotones">
+                <div class="Nombre">
+                    <h1 class="Titulo">Alejandro Daniel Martinez</h1>
+                </div>
+                <div class="Botones">
+                    <a class="iconos" href="AlejandroMartinez-CV.pdf"> 
+                        <i class="fa-solid fa-file"></i> Curriculum
+                    </a>
+                    <a class="iconos" href="https://www.linkedin.com/in/alejandro-martinez-6782202b3/">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a class="iconos" href="https://github.com/AlejandroMartinez0912">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a class="iconos" href="mailto:alejandromartinezok09@gmail.com">
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </a>
+                    <a class="iconos" href="https://wa.me/2622539294">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+                <div class="Descripcion">
+                    <h3>Soy un <strong class="analista">Analista en Sistemas</strong> y <strong class="desarrollador">Desarrollador Web.</strong>.</h3>
+                </div>
+            </div>
+            <div class="FotoBotones">
+                <div class="FotoPerfil">
+                    <img src="images/fotoPerfil.jpeg" alt="Foto de perfil" class="fotoPerfil">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="proyectos">
+        <h2 class="titulo-proyectos">Proyectos</h2>
+    
+        <div class="contenedor-cards">
+            <!-- Card 1 -->
+            <div class="card-proyecto">
+                <img src="/images/miservicio.jpg" alt="Proyecto 1">
+                <div class="tarjeta-titulo">
+                    <h3>MiServicio</h3>
+                    <a href="https://github.com/AlejandroMartinez0912/MiServicio---Trabajo-Final" target="_blank" class="github-link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <p>Sistema de gestión de servicios Cliente-Profesional. Cuenta con tres procesos automatizados: Generación automatica de agenda y recordatorios, Calificación de servicios y cliente, API Mercado Pago para realizar transacciones.
+                    Tambien cuenta con gestión de turnos, usuarios, administrador y permisos de acceso y rol.
+                </p>
+                <p><strong>Tecnologías:</strong>
+                    <a class="iconos-tecnologias"><i class="fa-brands fa-laravel" title="Laravel" ></i></a>
+                    <a class="iconos-tecnologias"><i class="fa-brands fa-php" title="PHP"></i></a>
+                    <a class="iconos-tecnologias"><i class="fa-solid fa-database" title="MySQL"></i></a>
+                    <a class="iconos-tecnologias"><i class="fa-brands fa-js"></i> </a>
+                    <a class="iconos-tecnologias"><i class="fa-brands fa-bootstrap"></i></a>
+                </p>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="card-proyecto">
+                <img src="/images/agrosense.jpg" alt="Proyecto 2">
+                <div class="tarjeta-titulo">
+                    <h3>Agrosense</h3>
+                    <a href="https://github.com/MarianoIvasiuta26/agrosense" target="_blank" class="github-link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <p>Sistema de control y monitoreo diseñado para la producción hortícola. 
+                    Permite gestionar y almacenar información de dispositivos sensores y actuadores, 
+                    registrando datos relevantes como la ubicación (latitud y longitud).
+                <p><strong>Tecnologías:</strong> 
+                    <a class="iconos-tecnologias"><i class="fa-brands fa-java"></i></a>
+                    <a class="iconos-tecnologias"><i class="fa-brands fa-js"></i> </a>
+                    <a class="iconos-tecnologias"><i class="fa-brands fa-bootstrap"></i></a>
+                    <a class="iconos-tecnologias"><i class="fa-solid fa-database"></i> </a>    
+                </p>
+                
+            </div>
+            <!-- Card 3 -->
+            <div class="card-proyecto">
+                <img src="/images/lafuerza.png" alt="Proyecto 2">
+                <div class="tarjeta-titulo">
+                    <h3>LaFuerzaGym</h3>
+                    <a href="https://github.com/AlejandroMartinez0912/Gimnasio-LaFuerza---Integrador-POO-I" target="_blank" class="github-link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+                <p>Sistema de escritorio diseñado para la gestion de un gimnasio. Permite gestionar y almacenar informacion de clientes, equipos y rutinasa.</p>
+                <p><strong>Tecnologías:</strong> 
+                    <a class="iconos-tecnologias"><i class="fa-brands fa-java"></i></a>
+                    <!-- scene builder-->
+                    <a class="iconos-tecnologias"><i class="fa-solid fa-database"></i> </a>    
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologias" class="tecnologias">
+        <h2 class="titulo-tecnologias">Tecnologías</h2>
+        <div class="contenedor-tecnologias">
+            <div class="tecnologia">
+                <i class="fa-brands fa-laravel"></i>
+                <span>Laravel</span>
+            </div>
+            <div class="tecnologia">
+                <i class="fa-brands fa-php"></i>
+                <span>PHP</span>
+            </div>
+            <div class="tecnologia">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="tecnologia">
+                <i class="fa-brands fa-bootstrap"></i>
+                <span>Bootstrap</span>
+            </div>
+            <div class="tecnologia">
+                <i class="fa-brands fa-java"></i>
+                <span>Java</span>
+            </div>
+            <div class="tecnologia">
+                <i class="fa-solid fa-database"></i>
+                <span>MySQL</span>
+            </div>
+        </div>        
+    </section>
+
+    <section id="educacion" class="educacion">
+        <h2 class="titulo-educacion">Educación</h2>
+        <div class="contenedor-educacion">
+            <div class="card-educacion">
+                <h3>Analista en Sistemas</h3>
+                <p class="anio">2020 - 2025</p>
+            </div>
+            <div class="card-educacion">
+                <h3>Licenciatura en Sistemas de Información</h3>
+                <p class="anio">2020 - Actualmente</p>
+            </div>
+            <div class="card-educacion">
+                <h3>Profesor Universitario en Computación</h3>
+                <p class="anio">2020 - Actualmente</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contacto" class="contacto">
+        <h2 class="titulo-contacto">Contacto</h2>
+        <div class="contenedor-contacto">
+            <form action="porfolioController.php" method="POST" class="form-contacto">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Alejandro Martínez.</p>
+    </footer>
 </body>
 </html>
