@@ -11,11 +11,10 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="#inicio" class="nav-link active">Inicio</a>
+            <a href="#inicio" class="nav-link">Inicio</a>
             <a href="#proyectos" class="nav-link">Proyectos</a>
             <a href="#tecnologias" class="nav-link">Tecnologías</a>
             <a href="#educacion" class="nav-link">Educación</a>
-            <a href="#contacto" class="nav-link">Contacto</a>
         </nav>
     </header>
     
@@ -26,7 +25,7 @@
                     <h1 class="Titulo">Alejandro Daniel Martinez</h1>
                 </div>
                 <div class="Botones">
-                    <a class="iconos" href="AlejandroMartinez-CV.pdf"> 
+                    <a class="iconos" href="/docs/AlejandroMartinez-CV.pdf"> 
                         <i class="fa-solid fa-file"></i> Curriculum
                     </a>
                     <a class="iconos" href="https://www.linkedin.com/in/alejandro-martinez-6782202b3/">
@@ -43,7 +42,7 @@
                     </a>
                 </div>
                 <div class="Descripcion">
-                    <h3>Soy un <strong class="analista">Analista en Sistemas</strong> y <strong class="desarrollador">Desarrollador Web.</strong>.</h3>
+                    <h3>Soy un <strong class="analista">Analista en Sistemas</strong> y <strong class="desarrollador">Desarrollador Web</strong>.</h3>
                 </div>
             </div>
             <div class="FotoBotones">
@@ -109,7 +108,7 @@
                     </a>
                 </div>
 
-                <p>Sistema de escritorio diseñado para la gestion de un gimnasio. Permite gestionar y almacenar informacion de clientes, equipos y rutinasa.</p>
+                <p>Sistema de escritorio diseñado para la gestion de un gimnasio. Permite gestionar y almacenar informacion de clientes, equipos y rutinas.</p>
                 <p><strong>Tecnologías:</strong> 
                     <a class="iconos-tecnologias"><i class="fa-brands fa-java"></i></a>
                     <!-- scene builder-->
@@ -140,12 +139,13 @@
                 <span>Bootstrap</span>
             </div>
             <div class="tecnologia">
-                <i class="fa-brands fa-java"></i>
-                <span>Java</span>
-            </div>
-            <div class="tecnologia">
                 <i class="fa-solid fa-database"></i>
                 <span>MySQL</span>
+            </div>
+            <div class="tecnologia">
+                <!-- UML-->
+                <i class="fa-solid fa-diagram-project"></i>
+                <span>UML</span>
             </div>
         </div>        
     </section>
@@ -153,30 +153,24 @@
     <section id="educacion" class="educacion">
         <h2 class="titulo-educacion">Educación</h2>
         <div class="contenedor-educacion">
-            <div class="card-educacion">
-                <h3>Analista en Sistemas</h3>
-                <p class="anio">2020 - 2025</p>
-            </div>
-            <div class="card-educacion">
-                <h3>Licenciatura en Sistemas de Información</h3>
-                <p class="anio">2020 - Actualmente</p>
-            </div>
-            <div class="card-educacion">
-                <h3>Profesor Universitario en Computación</h3>
-                <p class="anio">2020 - Actualmente</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contacto" class="contacto">
-        <h2 class="titulo-contacto">Contacto</h2>
-        <div class="contenedor-contacto">
-            <form action="porfolioController.php" method="POST" class="form-contacto">
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu correo electrónico" required>
-                <textarea name="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
-                <button type="submit">Enviar mensaje</button>
-            </form>
+      
+          <div class="card-educacion">
+            <h3><i class="fas fa-graduation-cap"></i> Analista en Sistemas</h3>
+            <p class="anio">2020 - 2025</p>
+            <a href="/docs/analista.pdf" target="_blank" class="btn-pdf">Ver plan de estudios</a>
+          </div>
+      
+          <div class="card-educacion">
+            <h3><i class="fas fa-graduation-cap"></i> Licenciatura en Sistemas de Información</h3>
+            <p class="anio">2020 - Actualmente</p>
+            <a href="/docs/lsi.pdf" target="_blank" class="btn-pdf">Ver plan de estudios</a>
+          </div>
+      
+          <div class="card-educacion">
+            <h3><i class="fas fa-graduation-cap"></i> Profesor Universitario en Computación</h3>
+            <p class="anio">2020 - Actualmente</p>
+            <a href="/docs/profesorado.pdf" target="_blank" class="btn-pdf">Ver plan de estudios</a>
+          </div>
         </div>
     </section>
     

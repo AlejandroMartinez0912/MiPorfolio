@@ -7,23 +7,27 @@ body{
   /* elementos centrados*/
   margin: auto;
 }
-/* estilos de la barra de navegacion*/
+/* ESTILOS DE LA BARRA DE NAVEGACION*/
 .header {
-  width: 100%;
-  padding: 20px 0;
-  background-color: #121212; /* fondo oscuro elegante */
-  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  width: 90%;
+  margin: 20px auto;
+  padding: 15px 30px;
+  background: rgba(18, 18, 18, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
   position: sticky;
-  top: 0;
+  top: 20px;
   z-index: 1000;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navbar {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 100%;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
@@ -31,10 +35,11 @@ body{
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
   position: relative;
-  padding: 5px 0;
-  transition: color 0.3s ease;
 }
 
 .nav-link::after {
@@ -43,25 +48,28 @@ body{
   width: 0;
   height: 2px;
   background: #74C0FC;
-  left: 0;
-  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 6px;
   transition: width 0.3s ease;
 }
 
 .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
   color: #74C0FC;
 }
 
 .nav-link:hover::after {
-  width: 100%;
+  width: 60%;
 }
 
 .nav-link.active {
   color: #74C0FC;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .nav-link.active::after {
-  width: 100%;
+  width: 60%;
 }
 
 /* ESTILOS DE LA SECCION INICIO*/
@@ -292,35 +300,54 @@ body{
   border-left: 5px solid #74C0FC;
   padding-left: 15px;
 }
-
-
 .contenedor-educacion {
   display: flex;
-  flex-direction:row;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+}
+.card-educacion {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px; /* o 280px si querés más chiquitas */
+  min-height: 180px;
 }
 
-.card-educacion {
-  background-color: #1c1c1c;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
-  transition: background-color 0.3s ease;
+@media (max-width: 768px) {
+  .contenedor-educacion {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .card-educacion:hover {
-  background-color: #2e2e2e;
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
-.card-educacion h3 {
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 5px;
+.btn-pdf {
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: #74C0FC;
+  color: #1c1c1c;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.card-educacion .anio {
-  color: #74C0FC;
-  font-size: 16px;
+.btn-pdf:hover {
+  background-color: #4dabf7;
 }
 
 /* ESTILOS DE CONTACTO */
